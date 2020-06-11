@@ -34,7 +34,7 @@ class Regression(models.Model):
 
         result = model.predict(img)
 
-        return "{}".format(result.flatten()[0])
+        return "{}".format(int(result.flatten()[0]))
 
 
     def save(self, *args, **kwargs):
