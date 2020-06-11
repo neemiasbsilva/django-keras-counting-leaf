@@ -1,0 +1,18 @@
+{% extends "cnn_counting_leaf/index.html" %}
+
+{% block content %}
+
+    {% for item in items %}
+        <div class="card">
+            <img src="{{item.img.url}}" class="card_img_top" alt="...">
+            <div class="card_body">
+                <h5 class="card_title">Number of leafs: {{item.prediction}}</h5>
+            </div>
+
+            <a class="btn btn-sm btn-info" href="{%url 'update' item.id %}">Edit Image</a>
+            <a class="btn btn-sm btn-info" href="{%url 'delete' item.id %}">Delete Image</a>
+        </div>
+
+    {% endfor %}
+
+{% endblock content %}

@@ -1,0 +1,15 @@
+{% extends "cnn_counting_leaf/index.html" %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+    <h4>New Prediction</h4>
+
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{form|crispy}}
+        <button class="btn btn-primary" type="submit">Predict</button>
+    </form>
+
+{% endblock content %}
