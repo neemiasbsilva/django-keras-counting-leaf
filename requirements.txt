@@ -1,4 +1,4 @@
-setuptools --upgrade
+setuptools
 absl-py
 astor
 Django
