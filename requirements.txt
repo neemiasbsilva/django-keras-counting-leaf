@@ -16,7 +16,6 @@ PyYAML
 scipy==1.4.1
 six
 sqlparse
-tensorboard
 tensorflow
 tensorflow-estimator
 termcolor
