@@ -1,0 +1,23 @@
+absl-py
+astor
+Django
+django-crispy-forms
+h5py
+Keras==2.2.4
+Keras-Applications==1.0.8
+Keras-Preprocessing==1.1.0
+Markdown
+numpy
+Pillow
+protobuf
+pytz
+PyYAML
+scipy
+six
+sqlparse
+    tensorboard
+tensorflow
+tensorflow-estimator
+termcolor
+Werkzeug
+wrapt
