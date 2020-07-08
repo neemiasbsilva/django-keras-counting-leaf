@@ -118,7 +118,7 @@ USE_TZ = True
 
 from decouple import config
 
-SECRET_KEY = config(SECRET_KEY)
+SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', default=False, cast=bool)
 
 default_dburl = 'sqlite:///' + os.path.join(BASE_DIR, 'db.sqlite3')
