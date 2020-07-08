@@ -126,17 +126,30 @@ USE_TZ = True
 
 # MEDIA_URL = '/media/'
 
+# STATIC_URL = '/static/'
+# if DEBUG:
+#    STATICFILES_DIRS = [
+#    os.path.join(BASE_DIR, 'static'),
+#    ]
+# else:
+#    STATIC_ROOT = os.path.join(BASE_DIR,'static')
+
+# MEDIA_URL = '/media/'
+# MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+DATABASES = {
+    'default': dj_database_url.config(default='postgres://localhost')
+}
+
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
+ALLOWED_HOSTS = ['*']
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
-if DEBUG:
-   STATICFILES_DIRS = [
-   os.path.join(BASE_DIR, 'static'),
-   ]
-else:
-   STATIC_ROOT = os.path.join(BASE_DIR,'static')
-
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
 
 STATIC_FILESTORAGE = 'whitenoise.django.GzipManifestStaticFileStorage'
 
