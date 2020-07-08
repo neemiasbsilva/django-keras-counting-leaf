@@ -121,9 +121,6 @@ from decouple import config
 SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-# default_dburl = 'sqlite:///' + os.path.join(BASE_DIR, 'db.sqlite3')
-
-# DATABASES = { 'default': config('DATABASE_URL', default=default_dburl, cast=dj_database_url), }
 db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)
 
@@ -137,25 +134,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 MEDIA_URL = '/media/'
 
-# STATIC_URL = '/static/'
-# if DEBUG:
-#    STATICFILES_DIRS = [
-#    os.path.join(BASE_DIR, 'static'),
-#    ]
-# else:
-#    STATIC_ROOT = os.path.join(BASE_DIR,'static')
-
-# MEDIA_URL = '/media/'
-# MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
-# BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-# STATIC_URL = '/static/'
-# STATICFILES_DIRS = (
-#     os.path.join(BASE_DIR, 'static'),
-# )
 ALLOWED_HOSTS = ['*']
 STATIC_FILESTORAGE = 'whitenoise.django.GzipManifestStaticFileStorage'
 
