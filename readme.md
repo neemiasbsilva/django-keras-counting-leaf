@@ -1,9 +1,16 @@
-# Keras CNN model integrated into Django Framework to Plant Leaf Counting
+# Keras CNN model for  Plant Leaf Counting integrated into Django Framework and Deploy to Heroku
 
 [![Build Status](https://travis-ci.org/ImaginaryLandscape/django-version-viewer.svg?branch=master)](https://travis-ci.org/ImaginaryLandscape/django-version-viewer)
 [![Keras](https://img.shields.io/pypi/format/Keras)](https://travis-ci.org/keras-team/keras) 
 [![Documentation](https://img.shields.io/badge/api-reference-blue.svg)](https://www.tensorflow.org/api_docs/)
 
+
+## Access the Web Site
+
+<p align="center"><img src="https://github.com/neemiasbsilva/regression-in-CNNs-applied-to-plant-leaf-count/blob/master/dataset-01.png" width="35%" height="45%"><img src="https://github.com/neemiasbsilva/regression-in-CNNs-applied-to-plant-leaf-count/blob/master/dataset-02.png" width="40%" height="45%"></p> 
+<h6 align="center">Example of images you have to upload for the system predict the number of leafs in the plant.</h6>
+
+For access the web site, please [click here](https://boiling-harbor-43228.herokuapp.com/)
 
 ## Getting Started
 
