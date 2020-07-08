@@ -7,7 +7,7 @@
 
 ## Access the Web Site
 
-<p align="center"><img src="https://github.com/neemiasbsilva/regression-in-CNNs-applied-to-plant-leaf-count/blob/master/dataset-01.png" width="35%" height="45%"><img src="https://github.com/neemiasbsilva/regression-in-CNNs-applied-to-plant-leaf-count/blob/master/dataset-02.png" width="40%" height="45%"></p> 
+<p align="center"><img src="https://github.com/neemiasbsilva/regression-in-CNNs-applied-to-plant-leaf-count/blob/master/dataset-01.png" width="35%" height="45%"><img src="https://github.com/neemiasbsilva/regression-in-CNNs-applied-to-plant-leaf-count/blob/master/dataset-02.png" width="45%" height="45%"></p> 
 <h6 align="center">Example of images you have to upload for the system predict the number of leafs in the plant.</h6>
 
 For access the web site, please [click here](https://boiling-harbor-43228.herokuapp.com/)
