@@ -116,6 +116,16 @@ USE_L10N = True
 
 USE_TZ = True
 
+from decouple import config
+
+SECRET_KEY = config(SECRET_KEY)
+DEBUG = config('DEBUG', default=False, cast=bool)
+
+default_dburl = 'sqlite:///' + os.path.join(BASE_DIR, 'db.sqlite3')
+
+DATABASES = { 'default': config('DATABASE_URL', default=default_dburl, cast=dj_database_url), }
+
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
