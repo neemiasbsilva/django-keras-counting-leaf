@@ -1,6 +1,6 @@
 # Keras CNN model for  Plant Leaf Counting integrated into Django Framework and Deploy to Heroku
+> <cite>[Silva and Gonçalvez, 2019][1]</cite>
 
-[![Build Status](https://travis-ci.org/ImaginaryLandscape/django-version-viewer.svg?branch=master)](https://travis-ci.org/ImaginaryLandscape/django-version-viewer)
 [![Keras](https://img.shields.io/pypi/format/Keras)](https://travis-ci.org/keras-team/keras) 
 [![Documentation](https://img.shields.io/badge/api-reference-blue.svg)](https://www.tensorflow.org/api_docs/)
 
