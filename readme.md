@@ -54,6 +54,9 @@ Install requirements.txt:
 ```
 
 
+## Reference
+[1]:da Silva, Neemias Bucéli, and Wesley Nunes Gonçalves. "Regression in Convolutional Neural Networks applied to Plant Leaf Counting." Anais do XV Workshop de Visão Computacional. SBC, 2019.
+
 
 
 #
